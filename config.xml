@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>HelloCordova</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <!-- Allow images, xhrs, etc. to google.com -->
+    <access origin="http://google.com" />
+    <access origin="https://google.com" />
+    <!-- Access to the subdomain maps.google.com -->
+    <access origin="http://maps.google.com" />
+    <!-- Access to all the subdomains on google.com -->
+    <access origin="http://*.google.com" />
+    <!-- Enable requests to content: URLs -->
+    <access origin="content:///*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="www/assets/res/icon.png" />
+    <platform name="android">
+     <preference name="Fullscreen" value="true" />
+    <allow-intent href="market:*" />
+        <icon src="www/assets/res/android/ldpi.png" density="ldpi" />
+        <icon src="www/assets/res/android/mdpi.png" density="mdpi" />
+        <icon src="www/assets/res/android/hdpi.png" density="hdpi" />
+        <icon src="www/assets/res/android/xhdpi.png" density="xhdpi" />
+        <icon src="www/assets/res/android/xxhdpi.png" density="xxhdpi" />
+        <icon src="www/assets/res/android/xxxhdpi.png" density="xxxhdpi" />
+    </platform>
+    <platform name="ios">
+    <preference name="WKWebViewOnly" value="true" />
+    <feature name="CDVWKWebViewEngine">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
+    </feature>
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="AllowBackForwardNavigationGestures" value="true" />
+    <preference name="Allow3DTouchLinkPreview" value="false" />
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+         <!-- iOS 8.0+ -->
+        <!-- iPhone 6 Plus  -->
+        <icon src="www/assets/res/ios/icon-60@3x.png" width="180" height="180" />
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+        <icon src="www/assets/res/ios/icon-60@1x.png" width="60" height="60" />
+        <icon src="www/assets/res/ios/icon-60@2x.png" width="120" height="120" />
+         <icon src="www/assets/res/ios/icon-60@3x.png" width="180" height="180" />
+        <!-- iPad -->
+        <icon src="www/assets/res/ios/icon-76@1x.png" width="76" height="76" />
+        <icon src="www/assets/res/ios/icon-76@2x.png" width="152" height="152" />
+        <!-- Spotlight Icon -->
+        <icon src="www/assets/res/ios/icon-40@1x.png" width="40" height="40" />
+        <icon src="www/assets/res/ios/icon-40@2x.png" width="80" height="80" />
+        <icon src="www/assets/res/ios/icon-40@3x.png" width="120" height="120" />
+
+        <!-- iOS 6.1 -->
+        <!-- iPhone / iPod Touch -->
+        <icon src="www/assets/res/ios/icon-20@1x.png" width="57" height="57" />
+        <icon src="www/assets/res/ios/icon-20@2x.png" width="114" height="114" />
+        <!-- iPad -->
+      
+        <!-- iPad Pro -->
+      
+        <!-- iPhone Spotlight and Settings Icon -->
+        <icon src="www/assets/res/ios/icon-29@1x.png" width="29" height="29" />
+        <icon src="www/assets/res/ios/icon-29@2x.png" width="58" height="58" />
+        <icon src="www/assets/res/ios/icon-29@3x.png" width="87" height="87" />
+        <!-- iPad Spotlight and Settings Icon -->
+      
+        <!-- iPad Pro -->
+        <icon src="www/assets/res/ios/icon-83.5@2x.png" width="167" height="167" />
+    </platform>
+</widget>
